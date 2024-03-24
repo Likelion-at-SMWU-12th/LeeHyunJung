@@ -42,9 +42,9 @@ a:hover{
 #like{
     width: 50px;
     fill: #ddd;
-    position: absolute;
-    top: 50px;
-    left: 690px;
+    position: relative;
+    top: -950px;
+    left: 570px;
 }
 
 #like.active{
