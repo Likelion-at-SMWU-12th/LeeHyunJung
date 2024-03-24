@@ -39,7 +39,7 @@ a:hover{
     border: 1px solid #ebebeb;
     box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1);
 }
-.like{
+#like{
     width: 50px;
     fill: #ddd;
     position: absolute;
@@ -47,7 +47,7 @@ a:hover{
     left: 690px;
 }
 
-.like.active{
+#like.active{
     fill: red;
 }
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');

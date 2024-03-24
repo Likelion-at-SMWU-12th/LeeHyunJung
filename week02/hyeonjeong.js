@@ -9,3 +9,7 @@ function lightmode(){
     mainbox.style.color='black';
     h2.style.backgroundColor = 'cornsilk';
 }
+var btn = document.getElementById("like")
+btn.addEventListener('click', function(){
+    btn.classList.toggle('active')
+})
