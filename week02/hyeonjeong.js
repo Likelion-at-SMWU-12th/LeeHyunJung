@@ -1,4 +1,9 @@
-alert("Welcome to hyeonjeong info page!");
+if (confirm("Click the heart button!! ❤️")){
+    alert("Thanks 😸")
+}
+else{
+    alert("So sad 😿")
+}
 const mainbox = document.getElementById("mainbox");
 function darkmode(){
     mainbox.style.backgroundColor = '#262626';
