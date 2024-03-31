@@ -1,7 +1,7 @@
 import requests
 import json
 
-city = "Prague"
+city = "Fukuoka"
 apikey = "3242e927b5b39f2eaf41f24b7b04659d"
 lang = "kr"
 
