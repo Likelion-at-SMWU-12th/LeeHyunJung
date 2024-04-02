@@ -1,8 +1,11 @@
+from dotenv import load_dotenv
 import requests
 import json
+import os
 
 city = "Fukuoka"
-apikey = "3242e927b5b39f2eaf41f24b7b04659d"
+load_dotenv()
+apikey=os.getenv('apikey')
 lang = "kr"
 
 api = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apikey}&lang={lang}&units=metric"
