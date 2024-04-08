@@ -19,6 +19,7 @@ from django.urls import path
 from demos.views import myhobby
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hyeonjeong/', myhobby),
