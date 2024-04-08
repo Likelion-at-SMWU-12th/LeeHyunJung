@@ -1,0 +1,90 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA_Compatible" content="IE=edge">
+    <meta name = "viewpoint" content = "width=device-width, initial-scale=1.0">
+    <title>MY Hobby</title>
+    <style>
+        h1{
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        h2{
+            font-size: 25px;
+            margin-top: 40px;
+            background-color: rgba(182, 202, 251, 1);
+            cursor: pointer;
+        }
+        p{
+            font-size: 17px;
+        }
+        .left{
+            float:left;
+            margin-right:10px;
+        }
+        a{
+            text-decoration-line: none;
+            color:  black;
+            background-color: rgba(220, 234, 254, 1);
+            padding: 10px;
+            border-radius: 15px;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        a:hover{
+            background-color: rgba(165, 202, 253, 1);
+            color: rgba(255, 255, 255, 1);
+        }
+        #mainbox{
+            width: 610px;
+            padding: 30px;
+            margin: 30px;
+            margin-right: auto;
+            margin-left: auto;
+            border: 1px solid #ebebeb;
+            box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1);
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+        *{
+            font-family: "Open Sans", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id = "mainbox">
+        <section>
+            <h1>🤍My Hobby🤍</h1>
+        </section>
+        <section>
+            <h2>Movie/Drama</h2>
+            <p>💭저는 집에서 넷플릭스, 디즈니 플러스로 영화/드라마 보는 것을 좋아합니다!</p>
+            <p>💭인생 영화를 하나 꼽으라면 저는 '이터널 선샤인'을 꼽겠습니다.!! 영상미와 스토리 플롯 모두 아름다웠던 영화..🥹</p>
+            <p>💭또, 최근에 봤던 드라마 중에 가장 재밌었던 것은 무빙!!</p>
+            <img src = "{% static 'image/movie.jpg' %}" width = "300">
+            <img src = "{% static 'image/drama.jpg' %}" width = "300">
+        </section>
+        <section>
+            <h2>Music</h2>
+            <p>💭저는 노래를 듣는 것도 꽤나 좋아한답니다..lala</p>
+            <p style = "font-size: 20px;">🎶백예린🎶</p>
+            <div class="left"> <img src = "{% static 'image/yerin.jpg' %}" width = "300"> </div>
+            <div class = "right"> 
+                <p>💭이 앨범에 있는 "I am not you ocean anymore"라는 노래를 가장 좋아합니다!</p>
+                <p>💭재작년 서재페에서 불렀던 라이브가 너무 좋았어요.</p>
+                <p>🎧Listen🎧</p>
+                <a href = "https://youtu.be/vnxO_lHypFk?si=aZxWPli9q0qmQEZf">I am not your ocean anymore</a>
+            </div><div style = "clear:both"></div>
+            <p style = "font-size: 20px;">🎶WOODZ🎶</p>
+            <div class="left"> <img src = "{% static 'image/woodz.jpg' %}" width = "300"> </div>
+            <div class = "right"> 
+                <p>💭Woodz 노래는 다 좋지만.. 역시 'Drowning'이 제 최애곡입니다!</p>
+                <p>💭유튜브에 있는 밴드 라이브 버전 조회수 중 절반은 제가 들었어요.</p>
+                <p>🎧Listen🎧</p>
+                <a href = "https://youtu.be/tiKFuzpX-NA?si=MqDo60AdsOiCoAEX">Drowning</a>
+            </div><div style = "clear:both"></div>
+        </section>
+</body>
+</html>
