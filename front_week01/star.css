@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Jua&display=swap');
+*{
+    font-family: "Hahmlet", serif;
+}
+.hidden{
+    display: none;
+}
+body{
+    background-color: rgba(72 , 61 , 139);
+}
+#login-form{
+    width: 270px;
+    padding: 30px;
+    margin: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    text-align: center;
+}
+p{
+    font-size: 40px;
+}
+.form-control{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#name{
+    width: 150px;
+    height: 25px;
+    text-align: center;
+}
+#date{
+    width: 150px;
+    height: 25px;
+    text-align: center;
+}
+button{
+    width: 70px;
+    height: 25px;
+    text-align: center;
+}
+label{
+    margin-right: 10px;
+}
+#star{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
