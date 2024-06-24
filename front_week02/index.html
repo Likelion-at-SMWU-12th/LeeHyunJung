@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    <div class = "first">
+        <section>
+            <div id = "profile">
+                <h1 id = "title">현정's To-Do List</h1>
+                <img src = "./memoticon.jpg"/>
+            </div>
+       </section>
+        <section>
+            <div id = "clockbox">
+                <h1 id="clock">현재 시각은 0000년 00월 00일 00시 00분 00초 입니다.</h1>
+            </div>
+        </section>
+    </div>
+    <div class = "second">
+        <div id = "todobox">
+            <section>
+                <h2 id = "todo">투두리스트 추가하기</h2>
+                <form id = "todo-form">
+                    <input class = "content" type = "text" placeholder = "기한과 내용을 입력한 후 add 버튼을 클릭하세요." size = 50 required/>
+                    <input class = "date" type = "date" required>
+                    <button type = "submit">add</button>
+                </form>
+            </section>
+            <section>
+                <h2 id = "todo">나의 할 일</h2>
+                <ul id = "todo-list"></ul>
+            </section>
+        </div>
+    </div>
+    <script src = "js/clock.js"></script>
+    <script src = "js/todo.js"></script>
+</body>
+</html>

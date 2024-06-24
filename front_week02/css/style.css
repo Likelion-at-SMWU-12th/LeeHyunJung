@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    font-family: "Open Sans", sans-serif;
+}
+.first{
+    width: 610px;
+    height: 870px;
+    padding: 30px;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1);
+    margin: 30px;
+    margin-right: auto;
+    margin-left: 450px;
+}
+#profile{
+    padding: 30px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1);
+    width: 500px;
+    text-align: center;
+    font-size: 30px
+}
+#clockbox{
+    padding: 30px;
+    margin: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1);
+    width: 500px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.second{
+    width: 610px;
+    height: 870px;
+    padding: 30px;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1);
+    position: absolute;
+    top: 30px;
+    left: 1180px;
+}
+#todobox{
+    padding: 30px;
+
+    margin-top:auto;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,0.1);
+    width: 500px;
+    height: 810px;
+}
+#todo{
+    background-color:rgba(172,203,221);
+    color: white;
+    font-size:25px;
+}
+
+button{
+    margin-top: 5px;
+}
+
+.todo-item button{
+    margin-left: 5px;
+}
