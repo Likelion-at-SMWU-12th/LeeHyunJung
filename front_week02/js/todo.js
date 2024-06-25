@@ -1,5 +1,4 @@
 const toDoForm = document.getElementById("todo-form");
-// const toDoInput = document.querySelector("#todo-form input"); 
 const contentinput = document.querySelector(".content");
 const dateinput = document.querySelector(".date");
 
@@ -9,7 +8,6 @@ function paintTodo(newTodo, newDate){
     const li = document.createElement("li");
     li.classList.add("todo-item");
     const span = document.createElement("span");
-    // li.appendChild(span);
     span.innerText = `${newTodo} (기한: ${newDate})`;
     const button = document.createElement("button");
     button.innerText = "✅";
