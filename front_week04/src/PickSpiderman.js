@@ -1,8 +1,6 @@
-import { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
-const PickSpiderman = () => {
-  const [state, setState] = useState(0);
-
+const PickSpiderman = ({ spidermanID, state, setState }) => {
   useEffect(() => {
     console.log("Picked!");
   }, [state]);

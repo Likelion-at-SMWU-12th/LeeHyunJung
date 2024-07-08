@@ -39,6 +39,9 @@ const SpiderButtonbox = styled.div`
 const Spiderman = () => {
   const [spidermen, setMovies] = useState([]);
   const [selectedButton, setSelectedButton] = useState("first");
+  const [stateFirst, setStateFirst] = useState(0);
+  const [stateSecond, setStateSecond] = useState(0);
+  const [stateThird, setStateThird] = useState(0);
 
   useEffect(() => {
     axios
@@ -97,7 +100,27 @@ const Spiderman = () => {
               <p>{spiderman.movie}</p>
               <img src={spiderman.image} alt={spiderman.actor} />
               <h2>{spiderman.actor}</h2>
-              <PickSpiderman />
+              {selectedButton === "first" && (
+                <PickSpiderman
+                  spidermanId="1"
+                  state={stateFirst}
+                  setState={setStateFirst}
+                />
+              )}
+              {selectedButton === "second" && (
+                <PickSpiderman
+                  spidermanId="2"
+                  state={stateSecond}
+                  setState={setStateSecond}
+                />
+              )}
+              {selectedButton === "third" && (
+                <PickSpiderman
+                  spidermanId="3"
+                  state={stateThird}
+                  setState={setStateThird}
+                />
+              )}
             </li>
           </Container>
         ))}
