@@ -1,19 +1,22 @@
 {
-  "movies": [
+  "spidermen": [
     {
       "id": 1,
-      "title": "인사이드 아웃 2",
-      "description": "2024년, 전 세계를 공감으로 물들인 유쾌한 상상이 다시 시작된다!"
+      "title": "1대 스파이더맨",
+      "movie": "스파이더맨 시리즈",
+      "actor": "Tobey Maguire"
     },
     {
       "id": 2,
-      "title": "하이재킹",
-      "description": "대한민국 상공 여객기 납치 사건 이 비행에 모두가 목숨을 걸었다! "
+      "title": "2대 스파이더맨",
+      "movie": "어메이징 스파이더맨 시리즈",
+      "actor": "Andrew Garfield"
     },
     {
       "id": 3,
-      "title": "콰이어트 플레이스: 첫째 날",
-      "description": "쉿, 살고 싶다면 절대 소리내지 말 것!"
+      "title": "3대 스파이더맨",
+      "movie": "MARVEL의 스파이더맨",
+      "actor": "Tom Holland"
     }
   ]
 }
