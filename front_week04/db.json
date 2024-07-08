@@ -4,19 +4,22 @@
       "id": 1,
       "title": "1대 스파이더맨",
       "movie": "스파이더맨 시리즈",
-      "actor": "Tobey Maguire"
+      "actor": "Tobey Maguire",
+      "image": "/images/first.jpeg"
     },
     {
       "id": 2,
       "title": "2대 스파이더맨",
       "movie": "어메이징 스파이더맨 시리즈",
-      "actor": "Andrew Garfield"
+      "actor": "Andrew Garfield",
+      "image": "/images/second.jpeg"
     },
     {
       "id": 3,
       "title": "3대 스파이더맨",
       "movie": "MARVEL의 스파이더맨",
-      "actor": "Tom Holland"
+      "actor": "Tom Holland",
+      "image": "/images/third.jpeg"
     }
   ]
 }
