@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const Seminar = styled.div`
   background-color: Black;
-  min-height: 160vh;
+  height: auto;
+  width: 100%;
 `;
 const Title = styled.div`
   background-color: rgb(236, 117, 19);
@@ -41,10 +42,10 @@ const Learn = styled.div`
 
 const Week01 = () => {
   return (
-    <Seminar class="seminar">
+    <Seminar>
       <Title>🦁 1st Seminar 🦁</Title>
-      <Learn class="learn">
-        <h2> What we learn</h2>
+      <Learn>
+        <h2>What we learn</h2>
         <p>자바스크립트와 콘솔</p>
         <p>변수</p>
         <p>데이터 타입</p>
@@ -53,7 +54,7 @@ const Week01 = () => {
         <p>조건문</p>
         <p>이벤트</p>
       </Learn>
-      <Learn class="hw">
+      <Learn>
         <h2>My Homework</h2>
         <img src="/images/week01_img.png" alt="week01"></img>
       </Learn>
@@ -62,3 +63,6 @@ const Week01 = () => {
 };
 
 export default Week01;
+export { Seminar };
+export { Title };
+export { Learn };
