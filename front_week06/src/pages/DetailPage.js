@@ -25,6 +25,19 @@ const DetailPage = () => {
     getDetail();
   }, []);
 
+  const onBtnDel = () => {
+    axios
+      .delete(`http://127.0.0.1:8000/entries/${id}/`)
+      .then((response) => {
+        console.log(response);
+        alert("삭제되었습니다.");
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <Wrapper>
       <Button txt={"방명록 작성하기"} onBtnClick={() => navigate("/write")} />
@@ -35,7 +48,7 @@ const DetailPage = () => {
           <Comment>{detail.comment}</Comment>
           <BtnLine>
             <Button txt={"수정"} fontSize={"30px"} />
-            <Button txt={"삭제"} fontSize={"30px"} />
+            <Button txt={"삭제"} fontSize={"30px"} onBtnClick={onBtnDel} />
           </BtnLine>
         </DetailDiv>
       </DetailWrapper>
