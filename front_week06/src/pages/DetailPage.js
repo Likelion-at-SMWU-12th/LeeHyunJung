@@ -26,16 +26,20 @@ const DetailPage = () => {
   }, []);
 
   const onBtnDel = () => {
-    axios
-      .delete(`http://127.0.0.1:8000/entries/${id}/`)
-      .then((response) => {
-        console.log(response);
-        alert("삭제되었습니다.");
-        navigate("/");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    if (window.confirm("삭제하시겠습니까?")) {
+      axios
+        .delete(`http://127.0.0.1:8000/entries/${id}/`)
+        .then((response) => {
+          console.log(response);
+          alert("삭제되었습니다.");
+          navigate("/");
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    } else {
+      alert("취소");
+    }
   };
 
   return (
