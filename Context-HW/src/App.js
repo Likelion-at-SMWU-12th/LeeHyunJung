@@ -1,15 +1,16 @@
 import { useState } from "react";
 import Content from "./components/Content";
 import { styled } from "styled-components";
+import { usePart } from "./contexts/PartContext";
 
 function App() {
-  const [part, setPart] = useState("");
+  const { part } = usePart();
   return (
     <Wrapper>
       <div className="title">
         숙명여대 멋쟁이사자처럼 <span>{part}</span> 파트 구성원
       </div>
-      <Content part={part} setPart={setPart} />
+      <Content />
     </Wrapper>
   );
 }
