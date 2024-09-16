@@ -20,4 +20,9 @@ const useProductStore = create(
   }))
 );
 
+export const useSearchStore = create((set) => ({
+  query: "아이폰",
+  setQuery: (state) => set({ query: state }),
+}));
+
 export default useProductStore;
