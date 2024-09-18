@@ -10,7 +10,7 @@ function App() {
   const products = useProductStore((state) => state.products);
   return (
     <Wrapper>
-      <Title onClick={() => navigate("/")}>Pick your Necklace!</Title>
+      <Title onClick={() => navigate("/")}>Shopping Right Now!</Title>
       <CartBtn onClick={() => navigate("/heartlist")}>내가 찜한 리스트</CartBtn>
       <Heart
         onClick={() => navigate("/heartlist")}
