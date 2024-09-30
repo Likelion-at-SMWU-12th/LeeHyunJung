@@ -3,6 +3,7 @@ import { createPost } from "../axios/index";
 import { updatePost } from "../axios/index";
 import { getPost } from "../axios/index";
 import { deletePost } from "../axios/index";
+import { signUp } from "../axios/index";
 
 export const useCreatePOst = () => {
   return useMutation({
@@ -35,6 +36,16 @@ export const useDeletePost = () => {
     onSuccess: () => {
       alert("게시글이 삭제되었습니다.");
       queryClient.invalidateQueries("postList");
+    },
+  });
+};
+
+export const useSignUp = (username, password) => {
+  return useMutation({
+    mutationFn: ({ username, password }) => signUp(username, password),
+    enabled: !!username && !!password,
+    onSuccess: () => {
+      alert("환영합니다");
     },
   });
 };
