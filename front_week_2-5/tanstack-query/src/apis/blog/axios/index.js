@@ -33,3 +33,9 @@ export const updateProfile = async (userId, updatedInfo) => {
   const { data } = await axios.post(`api/users/profile/${userId}`, updatedInfo);
   return data;
 };
+
+// 마이페이지 조회
+export const mypageFetch = async (userId) => {
+  const { data } = await axios.get(`api/mypage/${userId}`);
+  return data;
+};

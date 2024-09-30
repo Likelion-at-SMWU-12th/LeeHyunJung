@@ -5,6 +5,7 @@ import { getPost } from "../axios/index";
 import { deletePost } from "../axios/index";
 import { signUp } from "../axios/index";
 import { updateProfile } from "../axios/index";
+import { mypageFetch } from "../axios/index";
 
 export const useCreatePOst = () => {
   return useMutation({
@@ -62,5 +63,16 @@ export const useUpdateProfile = (userId) => {
       alert("개인 정보가 수정되었습니다");
       queryClient.invalidateQueries("myPage");
     },
+  });
+};
+
+// 마이 페이지 조회
+export const useMypageFetch = (userId) => {
+  return useQuery({
+    queryKey: ["mypage", userId],
+    queryFn: () => mypageFetch(userId),
+    enabled: !!userId,
+    staleTime: 30000,
+    cacheTime: 300000,
   });
 };
