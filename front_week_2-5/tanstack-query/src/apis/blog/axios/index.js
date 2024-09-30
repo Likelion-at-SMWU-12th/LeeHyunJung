@@ -39,3 +39,9 @@ export const mypageFetch = async (userId) => {
   const { data } = await axios.get(`api/mypage/${userId}`);
   return data;
 };
+
+// 회원 정보 삭제
+export const deleteUser = async (userId) => {
+  const { data } = await axios.delete(`api/users/quit/${userId}`);
+  return data;
+};

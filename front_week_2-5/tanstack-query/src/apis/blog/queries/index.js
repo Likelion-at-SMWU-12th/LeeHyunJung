@@ -6,6 +6,7 @@ import { deletePost } from "../axios/index";
 import { signUp } from "../axios/index";
 import { updateProfile } from "../axios/index";
 import { mypageFetch } from "../axios/index";
+import { deleteUser } from "../axios/index";
 
 export const useCreatePOst = () => {
   return useMutation({
@@ -61,7 +62,7 @@ export const useUpdateProfile = (userId) => {
     enabled: !!userId,
     onSuccess: () => {
       alert("개인 정보가 수정되었습니다");
-      queryClient.invalidateQueries("myPage");
+      queryClient.invalidateQueries({ queryKey: ["mypage"] });
     },
   });
 };
@@ -74,5 +75,19 @@ export const useMypageFetch = (userId) => {
     enabled: !!userId,
     staleTime: 30000,
     cacheTime: 300000,
+  });
+};
+
+// 회원 정보 삭제
+export const useDeleteUser = (userId) => {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: ({ userId }) => deleteUser(userId),
+    enabled: !!userId,
+    cacheTime: 300000,
+    onSuccess: () => {
+      alert("사용자 정보가 삭제되었습니다");
+      queryClient.invalidateQueries({ queryKey: ["mypage"] });
+    },
   });
 };
