@@ -4,6 +4,7 @@ import { updatePost } from "../axios/index";
 import { getPost } from "../axios/index";
 import { deletePost } from "../axios/index";
 import { signUp } from "../axios/index";
+import { updateProfile } from "../axios/index";
 
 export const useCreatePOst = () => {
   return useMutation({
@@ -40,12 +41,26 @@ export const useDeletePost = () => {
   });
 };
 
+// 회원가입
 export const useSignUp = (username, password) => {
   return useMutation({
     mutationFn: ({ username, password }) => signUp(username, password),
     enabled: !!username && !!password,
     onSuccess: () => {
       alert("환영합니다");
+    },
+  });
+};
+
+// 개인 정보 수정
+export const useUpdateProfile = (userId) => {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: ({ userId, updatedInfo }) => updateProfile(userId, updatedInfo),
+    enabled: !!userId,
+    onSuccess: () => {
+      alert("개인 정보가 수정되었습니다");
+      queryClient.invalidateQueries("myPage");
     },
   });
 };

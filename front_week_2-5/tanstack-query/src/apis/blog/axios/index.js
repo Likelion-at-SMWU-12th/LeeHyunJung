@@ -29,7 +29,7 @@ export const signUp = async (userinfo) => {
 };
 
 // 개인 정보 수정
-export const UpdateProfile = async (postId, updatedInfo) => {
-  const { data } = await axios.post(`api/users/profile/${postId}`, updatedInfo);
+export const updateProfile = async (userId, updatedInfo) => {
+  const { data } = await axios.post(`api/users/profile/${userId}`, updatedInfo);
   return data;
 };
