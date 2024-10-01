@@ -17,7 +17,7 @@ export const getPost = async (postId) => {
 };
 
 export const deletePost = async (postId) => {
-  const { data } = await axios.delte(`api/posts/${postId}`);
+  const { data } = await axios.delete(`api/posts/${postId}`);
   return data;
 };
 
@@ -30,7 +30,7 @@ export const signUp = async (userinfo) => {
 
 // 개인 정보 수정
 export const updateProfile = async (userId, updatedInfo) => {
-  const { data } = await axios.post(`api/users/profile/${userId}`, updatedInfo);
+  const { data } = await axios.put(`api/users/profile/${userId}`, updatedInfo);
   return data;
 };
 
